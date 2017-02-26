@@ -60,7 +60,7 @@
 
 </head>
 <body>
-	<nav class="navbar navbar-default navbar-fixed-top main-nav">
+	<nav class="navbar navbar-default navbar-fixed-top main-nav top-navbar">
 	  	<div class="container-fluid">
 	    	<div class="navbar-header">
 	      		<a class="navbar-brand navbar-brand-top" href="#"><img src="img/jaws.svg" alt=""></a>    
@@ -68,10 +68,9 @@
 
 		    <div class="collapse navbar-collapse">
 		  		<ul class="nav navbar-nav navbar-right">
-		  			<li><a href="tel:+440973571702" class="btn btn-phone"><img src="img/phone.svg"><small>097</small> <span class="main-phone">357 17 02</span></a>  				
+		  			<li><a href="tel:+440973571702" class="btn btn-phone"><img src="img/phone.svg" alt=""><small>097</small> <span class="main-phone">357 17 02</span></a>  				
 		  			<li><a href="javascript:;" class="btn btn-primary send-request">Отправить запрос</a></li>
-		  			<!-- <li><a href="javascript:;" class="btn menu-btn"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a></li> -->
-		  			<li><a href="javascript:;" class="btn menu-btn"><span class="glyphicon" aria-hidden="true"></span></a></li>
+		  			<li><a href=""><input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label></a></li>
 		  		</ul>
 		    </div><!-- .navbar-collapse -->
 
@@ -121,10 +120,10 @@
 								<p>ул. Мишуги, 12, 02140, Киев</p>
 								<p>(097) 357-17-02,</p>
 								<p>hello@jaws.com.ua</p>
-								<p style="margin-top: 30px;">Мы всегда готовы предоставить бесплатную квалифицированную консультацию.</p>	
+								<p class="column-left__display" style="margin-top: 30px;">Мы всегда готовы предоставить бесплатную квалифицированную консультацию.</p>	
 							</div>
 					
-							<div class="col-md-4 column-right">
+							<div class="col-md-4 column-left" style="padding-top: 45px;">
 								<a href="tel:+380443571702" class="phone-us" style="background-image: url(img/icon-phone-transp.svg);">+38 (044) 357 17 02</a>
 								<a href="tel:+380953203496" class="phone-us" style="margin-bottom: 15px;">+38 (095) 320-34-96</a>
 								<a href="mailto:hello@jaws.com.ua" class="mailto" style="background-image: url(img/icon-env-transp.svg); margin-bottom: 15px;">hello@jaws.com.ua</a>
@@ -149,7 +148,9 @@
 
 	<section class="map-section">
 		<div class="map-wrapper">
-			<div id="map"></div>
+			<div id="map">
+				
+			</div>
 		</div>
 	</section>
 
@@ -200,26 +201,17 @@
 	</div><!-- .section -->
 
     <section class="footer footer-bottom">
-  		<div class="container-fluid">  			
+  		<div class="container-fluid"  style="opacity: 0">  			
     		<div class="navbar-footer">
-	      		<a class="navbar-brand" href="#"><img src="img/jaws-small.svg" alt=""></a>
+	      		<a class="navbar-brand" href="#"><img src="img/jaws-small.png" alt=""></a>
 	      		<span class="version">Версия 1.0</span> 
-
-	      		<div class="navbar-header right">
-		      		<a class="navbar-brand bottom" href="javascript:;">О НАС</a>
-		      		<a class="navbar-brand bottom" href="javascript:;">ПРОЕКТЫ</a> 
-		      		<a class="navbar-brand bottom" href="javascript:;">УСЛУГИ И ЦЕНЫ</a> 
-		      		<a class="navbar-brand bottom" href="javascript:;">КЛИЕНТЫ</a>  
-		      		<a class="navbar-brand bottom" href="javascript:;">ОТЗЫВЫ</a> 
-		      		<a class="navbar-brand bottom" href="javascript:;">КОНТАКТЫ</a> 
-    			</div><!-- .navbar-header right -->    
     		</div><!-- .navbar-footer -->
     	</div> <!-- .container-fluid -->
     </section><!-- .section -->
 
 
 
-	<div class="loader"><img src="img/loading-bubbles.svg" width="64" height="64" /></div>
+	<div class="loader"><img src="img/loading-bubbles.svg" width="64" height="64" alt=""/></div>
     	
     <!-- Modal -->
     <div class="modal fade lightbox" id="bodybuilding_ua" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -240,17 +232,30 @@
 					</div>
 				</div>
 		      	<div class="modal-body" data-dismiss="modal">
-		        	<img class="preload-image" id="basicElementsImg" data-src="https://mir-s3-cdn-cf.behance.net/project_modules/hd/553dfe36729223.57282f3e1eb54.jpg" data-init="0">
+		        	<img class="preload-image" id="basicElementsImg" data-src="https://mir-s3-cdn-cf.behance.net/project_modules/hd/553dfe36729223.57282f3e1eb54.jpg" data-init="0" alt="">
 		      	</div>
         	</div>
       	</div>
     </div>
     <div id="background"></div>
+
+    <div id="right-nav" class="right-nav" style="right: 0px;">
+	    <ul class="nav navbar-nav navbar-right">
+	      <li><a href="javascript;:">Наши работы</a></li>
+	      <li><a href="javascript;:">Достижения</a></li>
+	      <li><a href="javascript;:">Услуги и цены</a></li>
+	      <li><a href="javascript;:">Наши клиенты</a></li>
+	      <li><a href="javascript;:">Как мы работаем</a></li>
+	      <li><a href="javascript;:">Отзывы клиентов</a></li>
+	      <li><a href="javascript;:">Контакты</a></li>
+	    </ul>
+  	</div>
+    
     
 	
 
 
-	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/parallax.min.js"></script>
 	<script src="js/jaws.js"></script>
